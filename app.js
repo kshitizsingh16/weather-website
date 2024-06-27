@@ -17,7 +17,7 @@ app.post("/", function (req, res) {
     https.get(url, function (response) {
         response.on("data", function (data) {
             const weatherData = JSON.parse(data);
-            console.log(weatherData);
+            // console.log(weatherData);
             const temp = weatherData.main.temp;
             const description = weatherData.weather[0].description;
             const icon = weatherData.weather[0].icon;
